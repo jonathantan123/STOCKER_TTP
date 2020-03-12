@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # ahoussaoinfoiasnofa
+User.destroy_all
 
 User.create(name: "jon", email_address: "admin", password_digest: BCrypt::Password.create('password'))
 Portfolio.create(user_id: 1)
